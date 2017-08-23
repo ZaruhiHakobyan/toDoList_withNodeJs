@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="jumbotron">
+                    <input type="text" class="new_todo_input" />
+                    <button type="button" class="my_btn btn btn-primary">Add</button>
+                </div>
+                <div class="jumbotron">
+                    <input type="text" class="search_input" placeholder="search"/>
+                </div>
+                <div class="jumbotron">
+                    <ul class="filtered_list"></ul>
+                </div>
+            </div>
+            <div class="col-sm-7">
+
+                <div class="jumbotron">
+                    <h3>My to-do list</h3>
+                    <ul class="to_do_list"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+</html>
